@@ -1,7 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-while (true)
+﻿namespace VrcGame
 {
-    var test = 0;
-    test++;
+    public class Program
+    {
+        public static FSDServer? fsdServer;
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Initializing. Please Standby...");
+            Initialize();
+        }
+
+        private static void Initialize()
+        {
+            FSDServer.Start();
+        }
+    }
 }
