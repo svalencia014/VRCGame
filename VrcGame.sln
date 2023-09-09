@@ -1,13 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34024.191
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.3
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VrcGame", "VrcGame.csproj", "{BB37AD14-4D7C-4ECB-87C0-CC2C045DC985}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB37AD14-4D7C-4ECB-87C0-CC2C045DC985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB37AD14-4D7C-4ECB-87C0-CC2C045DC985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB37AD14-4D7C-4ECB-87C0-CC2C045DC985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB37AD14-4D7C-4ECB-87C0-CC2C045DC985}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4C482703-E55E-4DBE-AEFC-B100CB797147}
+		SolutionGuid = {7D2818F6-E9F4-40FC-814F-A14DF21314F3}
 	EndGlobalSection
 EndGlobal
