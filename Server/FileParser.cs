@@ -26,8 +26,8 @@ namespace VrcGame
 				Environment.Exit(1);
 				return null;
 			}
-			
-		}
+			Console.WriteLine("Parsing Facility");
+			dynamic config;
 	}
 }
 
