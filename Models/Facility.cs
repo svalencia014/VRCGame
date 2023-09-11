@@ -4,21 +4,23 @@ namespace VrcGame
 {
 	public class Facility
 	{
-		public string Id;
+		public string Id { get; set; }
 		public enum FacilityType
 		{
 			Tower,
 			Tracon,
 			Tracab
 		}
-		public FacilityType Type;
-		public List<Controller>? Positions;
-		public List<Airport>? Airports;
+		public FacilityType Type { get; set; }
+		public List<Controller> Positions { get; set; }
+		public List<Airport> Airports { get; set; }
 
 		public Facility(string id, FacilityType type)
 		{
 			Id = id;
 			Type = type;
+			Positions = new List<Controller>();
+			Airports = new List<Airport>();
 		}
 	}
 }
