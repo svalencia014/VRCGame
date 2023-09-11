@@ -51,10 +51,22 @@ namespace VrcGame
 
         public static void ProcessData(string data)
         {
+            if (data.StartsWith("%"))
+            {
+                var tokens = data["%".Length..].Split(":");
+                var from = tokens[0];
+                var freq = tokens[1];
+
+                if (from == Player.Callsign && freq != Player.Frequency)
+                {
+                    Player.Frequency = freq;
+                    Console.WriteLine($"{Player.Callsign} changed to {Player.Frequency}");
+                }
+            }
             if (data.StartsWith("$ID"))
             {
                 var info = data["$ID".Length..].Split(':');
-                Player = new Controller(info[0], "199.998", "99998");
+                Player = new Controller(info[0], "199.998");
                 Console.WriteLine($"Created new Player with callsign {Player.Callsign} on {Player.Frequency}");
             }
 
